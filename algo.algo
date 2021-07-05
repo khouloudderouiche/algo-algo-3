@@ -1,0 +1,58 @@
+ALGORITHM orthog
+
+VAR
+    lv1 : ARRAY_OF arrays
+    lv2 : ARRAY_OF arrays
+    scalaire,i,j:integer
+BEGIN
+   FOR i FROM 0 TO lv1.length  STEP 1 DO
+   FOR j FROM  0 TO  lv2.length STEP step  DO
+       IF ( scalaire =0) THEN
+       write( " les deux vecteurs sont orth")
+          eles
+          write(" ne sont pas orth")
+       END_IF
+    END_FOR
+END
+PROCEDURE  DotProduct(v1,v2:array of float, var dot:integer)
+VAR
+i: integer
+   
+BEGIN
+ dot:=0;
+     IF (v1.length<>v2.length)THEN
+        write( "the length in not equal")
+    eles 
+    FOR i FROM 0 TO v1.lenght STEP 1 DO
+        dot:=dot+v1[i]*v2[i]
+    END_FOR
+    write(dot)
+    END_IF
+END
+FUNCTION  DotProduct (v1,v2:ARRAY_OF float) : float
+VAR
+    i:integer
+BEGIN
+  FOR i FROM 0 TO v1.length STEP 1  DO
+      dot:=dot +v1[i]*v2[i]
+  END_FOR
+  write(dot)
+    RETURN dot ;
+END
+ALGORITHM orthog
+
+
+VAR
+    lv1 : ARRAY_OF arrays
+    lv2 : ARRAY_OF arrays
+    scalaire,i,j:integer
+BEGIN
+   FOR i FROM 0 TO lv1.length  STEP 1 DO
+   FOR j FROM  0 TO  lv2.length STEP step  DO
+       IF ( v1.length<>v2.length) THEN
+       write( " the length is not equal")
+          eles
+        scalaire:=DotProduct(lv1[i],lv2[j])
+       END_FOR
+       END_FOR
+       END
